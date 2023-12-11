@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <div class="navbar-logo">
+                    <img src="assets/autoexotica-logo-fixed.png" alt="" class="autoexotica-logo">
+                    <h1 class="autoexotica-title">AUTOEXOTICA</h1>
+                </div>
+
+                <div class="navbar-content">
+                    <div class="navbar-item"><a href="index.html" class="navbar-link">HOME</a></div>
+                    <div class="navbar-item"><a href="#catalogwrapper" class="navbar-link">CATALOG</a></div>
+                    <div class="navbar-item"><a href="about.html" class="navbar-link">ABOUT</a></div>
+                    <div class="navbar-item"><a href="login.html" class="navbar-link-login">LOGIN</a></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-container-detail">
+            <div class="main-container-left">
+                <div class="selector-logo">
+                    <a href="toyota.html">
+                        <img src="assets/toyota-logo.png" alt="" class="toyota-logo-pic-back">
+                    </a>
+                </div>
+            </div>
+
+            <div class="main-container-middle">
+                <div class="car-picture-container">
+                    <img src="assets/toyota-camry.png" alt="" class="camry-pic-detail">
+                    <h1 class="car-title-detail">Toyota Camry</h1>
+                </div>
+
+                <div class="car-desc-container">
+                    <p>
+                        The all-new Toyota Camry embodies the epitome of automotive excellence, seamlessly blending stylish design, exceptional performance, and advanced technology. This iteration of the Camry exudes a modern and sophisticated presence, boasting sleek lines, an aerodynamic silhouette, and a bold front fascia that commands attention on the road. The meticulously crafted exterior is complemented by a spacious and luxurious interior, where comfort and convenience take center stage.
+                        
+                        Under the hood, the Camry offers a range of powerful and efficient engine options. The standard powertrain features a responsive 2.5-liter four-cylinder engine, delivering impressive performance while maintaining fuel efficiency. For those seeking a thrilling driving experience, the available 3.5-liter V6 engine provides exhilarating acceleration and an engaging ride. Paired with an advanced transmission system, the Camry effortlessly transitions between gears, ensuring seamless shifts and optimal performance.
+                        
+                        Inside the cabin, the Camry offers an inviting and refined environment. Premium materials, exquisite craftsmanship, and attention to detail are evident throughout. The driver-centric cockpit is designed for ultimate comfort and control, featuring an ergonomically placed center console and a multifunctional steering wheel with intuitive controls. The seats are plush and supportive, providing a relaxed and enjoyable driving experience even on long journeys.
+                        
+                        Technological innovation is a hallmark of the Camry. The state-of-the-art infotainment system, prominently displayed on a large touchscreen, seamlessly integrates with smartphones and other devices, offering seamless connectivity and access to a wide array of entertainment options. Advanced safety features, such as adaptive cruise control, lane departure warning, and automatic emergency braking, provide peace of mind and enhance overall safety on the road.
+                        
+                        Furthermore, the Camry embraces sustainability with the availability of hybrid powertrain options. These environmentally friendly models combine a fuel-efficient gasoline engine with an electric motor, delivering exceptional fuel economy and reduced emissions. This commitment to eco-consciousness aligns with Toyota's dedication to creating a greener future.
+                        
+                        In conclusion, the all-new Toyota Camry represents the pinnacle of automotive excellence. With its striking design, powerful yet efficient performance, luxurious interior, cutting-edge technology, and commitment to sustainability, the Camry continues to raise the bar for midsize sedans, setting a new standard of excellence in its class.</p>
+                </div>
+
+                <div class="car-review-container">
+                    <div class="review-bubble1">
+                        <div class="review-profile">
+                            <img src="assets/default-profile-picture.png" alt="" class="review-pic">
+                            <p class="review-name">Hugh Jass</p>
+                        </div>
+
+                        <div class="review-content">
+                            <div class="review-star">
+                                <img src="assets/five-star.png" alt="" class="star-rating-detail">
+                            </div>
+
+                            <div class="review-text">
+                                <p>It's a very good and reliable car. It is meant to be driven daily without fearing of it being broken. It also gives a good gas mileage. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-bubble1">
+                        <div class="review-profile">
+                            <img src="assets/default-profile-picture.png" alt="" class="review-pic">
+                            <p class="review-name">Andre Taulany</p>
+                        </div>
+
+                        <div class="review-content">
+                            <div class="review-star">
+                                <img src="assets/five-star.png" alt="" class="star-rating-detail">
+                            </div>
+
+                            <div class="review-text">
+                                <p>Very remarkable car for the class category and its price range. Absolutely recommended for a daily driven car. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container-right">
+                <a href="#" onclick="show('popup1')">
+                    <img src="assets/add-icon.png" alt="" class="add-icon-pic">
+                </a>
+            </div>
+        </div>
+
+       <div class="popup" id="popup1">
+           <h1 class="review-title">INSERT YOUR REVIEW</h1>
+           <div class="review-star-popup">
+               <img src="assets/stars.png" alt="" class="rating-star">
+           </div>
+
+           <div class="review-text-popup">
+               <textarea name="" id="" cols="" rows="5" class="review-text-input"></textarea>
+           </div>
+
+           <div class="submit-button">
+               <a href="#" onclick="hide('popup1')" class="submit-button-review">Submit</a>
+            </div>
+       </div>
+
+        <footer class="footbar">
+            <div class="footbar-item">
+                <h4>&copy; Autoexotica 2023</h4>
+            </div>
+        </footer>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>

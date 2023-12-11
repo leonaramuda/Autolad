@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <div class="navbar-logo">
+                    <img src="assets/autoexotica-logo-fixed.png" alt="" class="autoexotica-logo">
+                    <h1 class="autoexotica-title">AUTOEXOTICA</h1>
+                </div>
+
+                <div class="navbar-content">
+                    <div class="navbar-item"><a href="index.html" class="navbar-link">HOME</a></div>
+                    <div class="navbar-item"><a href="#catalogwrapper" class="navbar-link">CATALOG</a></div>
+                    <div class="navbar-item"><a href="about.html" class="navbar-link">ABOUT</a></div>
+                    <div class="navbar-item"><a href="login.html" class="navbar-link-login">LOGIN</a></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="carousel-container">
+            <div class="carousel-image-container">
+                <img src="assets/carousel1.jpg" alt="" class="carousel-pic fade" id="carousel-1">
+                <img src="assets/carousel2.jpg" alt="" class="carousel-pic fade" id="carousel-2">
+                <img src="assets/carousel3.jpg" alt="" class="carousel-pic fade" id="carousel-3">
+                <img src="assets/carousel4.jpg" alt="" class="carousel-pic fade" id="carousel-4">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center" class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <div class="catalog-wrapper" id="catalogwrapper">
+            <h1 class="catalog-title">C A T A L O G</h1>
+            <div class="catalog-container">
+                <div class="catalog-1-container">
+                    <div class="toyota-container">
+                        <a href="toyota.html">
+                            <div class="toyota-logo">
+                                <img src="assets/toyota-logo.png" alt="" class="toyota-logo-pic">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="catalog-2-container">
+                    <div class="honda-container">
+                        <a href="honda.html">
+                            <div class="honda-logo">
+                                <img src="assets/honda-logo.png" alt="" class="honda-logo-pic">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="catalog-3-container">
+                    <div class="bmw-container">
+                        <a href="bmw.html">
+                            <div class="bmw-logo">
+                                <img src="assets/bmw-logo.png" alt="" class="bmw-logo-pic">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="catalog-4-container">
+                    <div class="mercedes-container">
+                        <a href="mercedes.html">
+                            <div class="mercedes-logo">
+                                <img src="assets/mercedes-logo.png" alt="" class="mercedes-logo-pic">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footbar">
+            <div class="footbar-item">
+                <h4>&copy; Autoexotica 2023</h4>
+            </div>
+        </footer>
+    </div>
+</body>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="script.js"></script>
+</html>

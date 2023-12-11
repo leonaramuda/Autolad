@@ -1,0 +1,197 @@
+@import "style.css";
+
+.wrapper{
+    background-image:url(assets/mercedes-interior-4k.webp);
+}
+
+.main-container-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: top;
+    column-gap: 10px;
+    padding: 40px;
+    padding-bottom: 129px;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(44, 55, 107);
+    margin-top: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact-left{
+    padding: 30px;
+    padding-left: 50px;
+
+}
+
+.contact-right{
+    padding: 40px;
+    background-color: rgb(44, 55, 107);
+    color: #fff;
+}
+
+h1{
+    margin-bottom: 10px;
+
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    /* color: rgb(44, 55, 107); */
+    color: whitesmoke;
+
+}
+
+button{
+    background: rgb(44, 55, 107);
+    width: 100px;
+    border: none;
+    outline: none;
+    color:#fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.contact-left h3{
+    /* color:  rgb(44, 55, 107); */
+    color: whitesmoke;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+.about-us{
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin-top: 40px;
+    border: 1px solid rgb(44, 55, 107);
+    color: whitesmoke;
+}
+
+.about-us h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.about-us h1:after{
+    content: "";
+    height: 5px;
+    width: 200px;
+    background-color: rgb(44, 55, 107);
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+
+}
+.content-about{
+    width: 60%;
+    float: left;
+    text-align: justify;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+.content-about p{
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+.content-about h3{
+    letter-spacing: 1px;
+}
+
+.content-about .button-about{
+    margin-top: 40px;
+}
+
+.content-about .button-about a{
+    /* color: rgb(44, 55, 107); */
+    color: whitesmoke;
+    /* background-color: #ffffff; */
+    border: 1px solid whitesmoke;
+    padding: 10px 35px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.button-about:hover, .submit-button:hover{
+    transition: 0.3s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px){
+
+    .main-container-about{
+        display: inline-block;
+    }
+    .about-us{
+        width: 92%;
+        padding-top: 20px;
+    }
+
+    .content-about{
+        text-align: justify;
+        backdrop-filter: blur(12px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-top: 40px;
+        margin-left: -22px;
+        margin-bottom: 40px;
+        border: 1px solid rgb(44, 55, 107);
+        color: whitesmoke;
+        width: 88%;
+    }
+
+    .contact-box{
+        display: inline-block;
+        width: 100%;
+    }
+    
+}

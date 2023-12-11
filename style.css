@@ -1,0 +1,1094 @@
+*{
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    margin: 0px; 
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent; 
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.navbar{
+    background-color: rgb(44, 55, 107);
+    padding: 10px;
+}
+
+.navbar-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.navbar-logo{
+    display: flex;
+    text-align: center;
+}
+
+.autoexotica-logo{
+    width: 60px;
+}
+
+.autoexotica-title{
+    color: whitesmoke;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 30px;
+}
+
+.navbar-content{
+    display: flex;
+}
+
+.navbar-item{
+    margin: 20px;
+}
+
+.navbar-link{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar-link-login{
+    text-decoration: none;
+    color:rgb(71, 69, 180);
+    padding-left: 50px;
+}
+
+.navbar-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.carousel-container{
+    position: relative;
+    /* overflow: hidden; */
+    margin: auto;
+    background-color:rgb(37, 38, 39);
+}
+
+.carousel-image-container{
+    display: flex;
+    transition: transform 0.5s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-pic{
+    width: 1903px;
+    height: auto;
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-container{
+    padding: 10px;
+    background-color: rgb(44, 55, 107);
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.catalog-title{
+    color: whitesmoke;
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.catalog-wrapper{
+    background-image:url(assets/catalog-wallpaper.webp);
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.catalog-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.toyota-container{
+    backdrop-filter: blur(10px);
+    margin: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.toyota-logo-pic{
+    width: 200px;
+    height: 170px;
+}
+
+.toyota-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.honda-container{
+    backdrop-filter: blur(10px);
+    margin: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.honda-logo-pic{
+    width: 200px;
+    height: 170px;
+}
+
+.honda-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.bmw-container{
+    backdrop-filter: blur(10px);
+    margin: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bmw-logo-pic{
+    width: 200px;
+    height: 170px;
+}
+
+.bmw-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.mercedes-container{
+    backdrop-filter: blur(10px);
+    margin: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mercedes-logo-pic{
+    width: 200px;
+    height: 170px;
+}
+
+.mercedes-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.footbar{
+    display: flex;
+    background-color:rgb(44, 55, 107);
+    padding: 10px;
+}
+
+.footbar-item{
+    color: whitesmoke;
+}
+
+.main-container{
+    display: grid;
+    align-items: top;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+    background-image:url(assets/lc300-bg.jpeg);
+}
+
+.main-container-honda{
+    display: grid;
+    align-items: top;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+    background-image:url(assets/honda-background-3.jpg);
+}
+
+.main-container-bmw{
+    display: grid;
+    align-items: top;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+    background-image:url(assets/bmw-background-fixed.jpg)
+}
+
+.main-container-mercedes{
+    display: grid;
+    align-items: top;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 10px;
+    background-image:url(assets/mercedes-background.webp);
+}
+
+.selector{
+    display: inline-block;
+    /* background-color:rgb(44, 55, 107); */
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    text-align: left;
+}
+
+.selector-list{
+    padding-top: 50px;
+    padding-bottom: 350px;
+}
+.car-list{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+
+.list{
+    padding: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.sedan{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.toyota-pic{
+    width: 300px;
+}
+
+.camry-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 20px;
+}
+
+.camry-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.corolla-altis-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 40px;
+}
+
+.toyota-label-altis{
+    padding-top: 25px;
+}
+
+.corolla-altis-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.vios-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 40px;
+}
+
+.toyota-label-vios{
+    padding-top: 20px;
+}
+
+.vios-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.camry-hybrid-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 40px;
+}
+
+.toyota-label-chybrid{
+    padding-top: 15px;
+}
+
+.camry-hybrid-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.lc-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 70px;
+    padding-top: 50px;
+}
+
+.toyota-label-lc{
+    padding-top: 30px;
+}
+
+.lc-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.fortuner-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.toyota-label-fortuner{
+    padding-top: 30px;
+}
+
+.fortuner-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.supra-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.toyota-label-supra{
+    padding-top: 40px;
+}
+
+.supra-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1); 
+}
+
+#supra-pic{
+    padding-top: 50px;
+}
+
+.gr-container{
+    backdrop-filter: blur(8px);
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.toyota-label-gr{
+    padding-top: 20px;
+}
+
+.gr-container:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.brand-href{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+}
+
+.honda-label-hrv{
+    padding-top: 10px;
+}
+
+#crv-pic{
+    padding-top: 20px;
+}
+
+.honda-label-crv{
+    padding-top: 35px;
+}
+
+#typer-pic{
+    padding-top: 30px;
+}
+
+#nsx-pic{
+    padding-top: 40px;
+}
+
+.honda-label-nsx{
+    padding-top: 40px;
+}
+
+#g20-pic{
+    padding-top: 60px;
+    width: 340px;
+}
+
+.bmw-label-3{
+    padding-top: 20px;
+}
+
+#x7-pic{
+    width: 350px;
+    padding-top: 20px;
+}
+
+#g80-pic{
+    padding-top: 50px;
+}
+
+.bmw-label-m3{
+    padding-top: 70px;
+}
+
+#g82-pic{
+    padding-top: 50px;
+}
+
+.bmw-label-m4{
+    padding-top: 70px;
+}
+
+#a-class-pic{
+    padding-top: 20px;
+}
+
+#c-class-pic{
+    padding-top: 30px;
+    width: 330px;
+}
+
+#e-class-pic{
+    padding-top: 50px;
+}
+
+#s-class-pic{
+    padding-top: 60px;
+    width: 320px;
+}
+
+#sl-pic{
+    padding-top: 15px;
+}
+
+.mercedes-label-a{
+    padding-top: 5px;
+}
+
+.mercedes-label-c{
+    padding-top: 30px;
+}
+
+.mercedes-label-e{
+    padding-top: 40px;
+}
+
+.mercedes-label-s{
+    padding-top: 40px;
+}
+
+.mercedes-label-g{
+    padding-top: 25px;
+}
+
+.mercedes-label-sl{
+    padding-top: 15px;
+}
+
+.toyota-logo-pic-back{
+    width: 100px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.main-container-detail{
+    display: grid;
+    align-items: top;
+    grid-template-columns: 1fr 10fr 1fr;
+    column-gap: 5px;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%); */
+    background-image:url(assets/catalog-wallpaper.webp)
+}
+
+.main-container-middle{
+    text-align: center;
+}
+
+.car-title-detail{
+    font-size: 25px;
+    color:rgb(44, 55, 107);
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(12px);
+    margin-top: -30px;
+    margin-bottom: 50px;
+    margin-right: 500px;
+    margin-left: 500px;
+    padding: 10px;
+    text-shadow: 1px 1px black;
+}
+
+.car-desc-container{
+    text-align: justify;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    text-shadow: 1px 1px black;
+}
+
+.review-bubble1{
+    border: 1px solid whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+
+}
+
+.review-profile{
+    display: flex;
+    padding: 20px;
+    padding-left: 33px;
+    padding-top: 30px;
+}
+
+.review-name{
+    padding: 20px;
+    padding-top: 25px;
+}
+
+.review-pic{
+    width: 70px;
+}
+
+.review-star{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.review-text{
+    padding-left: 40px;
+    padding-bottom: 20px;
+    text-align: justify;
+    padding-right: 40px;
+}
+
+.main-container-right{
+    text-align: center;
+    padding-right: 75px;
+}
+
+.add-icon-pic{
+    width: 80px;
+    position: fixed;
+    padding-top: 750px;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    padding: 20px;
+    width: 1200px;
+    height: 500px;
+    left: 25%;
+    margin-left: -150px;
+    top: 33%;
+    margin-top: -100px;
+    /* background: #FFF; */
+    backdrop-filter: blur(20px);
+    z-index: 20;
+    text-align: center;
+    border: 1px solid whitesmoke;
+}
+
+#popup1:after{
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: rgba(0,0,0,0.5); */
+    backdrop-filter: blur(20px);
+    z-index: -2;
+    border: 1px solid whitesmoke;
+}
+
+#popup1:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: #FFF; */
+    backdrop-filter: blur(20px);
+    z-index: -1;
+    border: 1px solid whitesmoke;
+}
+
+.review-title{
+    padding: 20px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* color:rgb(44, 55, 107); */
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
+}
+
+.review-text-popup{
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.review-text-input{
+    display: flex;
+    border: 1px solid black;
+    width: 1100px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.submit-button-review{
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 16px;
+    background-color: rgb(44, 55, 107);
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 30px;
+}
+
+.rating-star{
+    width: 250px;
+    left: 0%;
+    cursor: pointer;
+}
+
+.star-rating-detail{
+    width: 100px;
+    margin-left: 25px;
+    margin-top: -20px;
+}
+
+.submit-button{
+    margin-top: 50px;
+}
+
+.submit-button:hover{
+    transition: 0.3s ease;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .navbar-menu{
+        display: inline-block;
+    }
+
+    .navbar-logo{
+        justify-content: center;
+    }
+
+    .navbar-content{
+        justify-content: center;
+    }
+
+    .navbar-link, .navbar-link-login{
+        font-size: 16px;
+    }
+
+    .autoexotica-title {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+    
+    .autoexotica-logo{
+        width: 7%;
+        height: 7%;
+
+    }
+    .navbar-link-login {
+        padding-left: 0px;
+    }
+    
+    .carousel-pic {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev, .next {
+        font-size: 14px;
+    }
+    
+    .dot-container {
+        padding: 5px;
+    }
+    
+    .catalog-title {
+        font-size: 30px;
+        padding-top: 100px;
+    }
+    
+    .catalog-container {
+        grid-template-columns: 1fr;
+        padding-bottom: 100px;
+    }
+    
+    .toyota-container,
+    .honda-container,
+    .bmw-container,
+    .mercedes-container {
+        margin: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .toyota-logo-pic,
+    .honda-logo-pic,
+    .bmw-logo-pic,
+    .mercedes-logo-pic {
+        width: 140px;
+        height: 120px;
+    }
+    
+    .footbar-item {
+        font-size: 12px;
+    }
+
+    .main-container,
+    .main-container-honda,
+    .main-container-bmw,
+    .main-container-mercedes {
+        grid-template-columns: 1fr;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .selector,
+    .selector-list{
+        width: 83.5%;
+        margin-right: 0;
+        margin-bottom: -200px;
+    }
+
+    .car-list,
+    .sedan,
+    .camry-container,
+    .corolla-altis-container,
+    .vios-container,
+    .camry-hybrid-container,
+    .lc-container,
+    .fortuner-container,
+    .supra-container,
+    .gr-container {
+        /* width: 90%; */
+        /* width: 90px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 20px; */
+
+        display: inline-block;
+        width: 94%;
+        margin-bottom: 20px;
+        margin-left: 6px;
+    }
+
+    .toyota-pic {
+        width: 100%;
+    }
+
+    .camry-container,
+    .corolla-altis-container,
+    .vios-container,
+    .camry-hybrid-container,
+    .lc-container,
+    .fortuner-container,
+    .supra-container,
+    .gr-container {
+        height: auto;
+    }
+
+    .camry-container,
+    .corolla-altis-container,
+    .vios-container,
+    .camry-hybrid-container,
+    .lc-container,
+    .fortuner-container,
+    .supra-container,
+    .gr-container:hover {
+        transform: none;
+    }
+
+    .lc-container, .fortuner-container, .supra-container, .gr-container{
+        margin-top: 20px;
+    }
+
+    .lc-container, .fortuner-container, .supra-container{
+       margin-bottom: 50px;
+    }
+    
+    #g20-pic{
+        width: 100%;
+    }
+
+    #x7-pic{
+        width: 100%;
+    }
+
+    #g82-pic{
+        width: 90%;
+    }
+
+    #c-class-pic{
+        width: 100%;
+    }
+
+    #e-class-pic{
+        width: 90%;
+    }
+
+    #s-class-pic{
+        width: 95%;
+    }
+
+    .main-container-detail {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+      }
+    
+    .car-title-detail {
+        margin-right: 0;
+        margin-left: 0;
+        width: 96.3%;
+      }
+
+    .camry-pic-detail{
+        width: 500px;
+    }
+    
+    .car-desc-container {
+        margin-right: 0;
+        margin-left: 0;
+        width: 89.8%
+      }
+    
+    .review-bubble1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        width: 99.5%;
+      }
+    
+    .review-profile {
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+    
+    .review-name {
+        padding-top: 20px;
+      }
+    
+    .review-pic {
+        width: 50px;
+      }
+    
+    .review-star {
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+      }
+    
+    .review-text {
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+      }
+    
+    .main-container-right {
+        padding-right: 30px;
+      }
+    
+    .add-icon-pic {
+        width: 100%;
+        padding-top: 550px;
+      }
+    
+    .popup {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        left: 0;
+        margin-left: 0;
+        top: 0;
+        margin-top: 0;
+        border: none;
+      }
+    
+    #popup1:after {
+        border: none;
+      }
+    
+    #popup1:before {
+        border: none;
+      }
+    
+    .review-title {
+        padding: 10px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    
+    .review-text-popup {
+        padding-left: 10px;
+        padding-top: 10px;
+      }
+    
+    .review-text-input {
+        width: 100%;
+        padding: 10px;
+      }
+    
+    .submit-button-review {
+        padding: 10px;
+        padding-right: 25px;
+        padding-left: 25px;
+        border-radius: 20px;
+      }
+    
+    .rating-star {
+        width: 150px;
+      }
+    
+    .star-rating-detail {
+        width: 50px;
+        margin-left: 10px;
+        margin-top: -10px;
+      }
+    
+    .submit-button {
+        margin-top: 20px;
+    }
+}

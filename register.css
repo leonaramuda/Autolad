@@ -1,0 +1,10 @@
+@import "login.css";
+form {
+    height: 850px;
+    padding: 50px 35px;
+}
+
+.login-link {
+    margin-left: 5px;
+}
+
